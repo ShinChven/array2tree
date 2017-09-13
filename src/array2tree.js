@@ -1,16 +1,17 @@
-module.exports = function (rootId,arr) {
-    
+/**
+ * created by ShinChven
+ * Build a tree from array, starting with items that contains the rootId.
+ * If a item can not trace its parent, or its parent's parent and on, back to the root, it and its children will not be added to the tree.
+ * @param {*int} rootId
+ * @param {*array} arr 
+ */
+var array2tree = function (rootId, arr) {
+
     /**
      * start with root id
      */
     var treeArr = findChildren(rootId);
-    
-    /**
-     * please notice!
-     * not all items will be added to the tree, due to random parentId.
-     * only good relation will be added to the tree.
-     * @param {*} parentId 
-     */
+
     function findChildren(parentId) {
         var treeArr = [];
         for (var i = 0; i < arr.length;) {
@@ -24,7 +25,7 @@ module.exports = function (rootId,arr) {
                 i++;
             }
         }
-    
+
         // find children recursively
         for (var index in treeArr) {
             var parent = treeArr[index];
@@ -32,10 +33,12 @@ module.exports = function (rootId,arr) {
         }
         return treeArr;
     }
-    
-    
+
+
     // output result to file
     var result = JSON.stringify(treeArr, null, 2);
 
     return result;
 };
+
+module.exports = array2tree;
