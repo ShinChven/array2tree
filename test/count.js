@@ -1,4 +1,4 @@
-var dataArr=require('../data/tree.json');
+var dataArr=require('./data/tree.json');
 
 var count = 0;
 

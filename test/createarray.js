@@ -2,9 +2,6 @@
  * generate array data
  */
 
-
-
-
 function getRandomInt(min, max) {
     min = Math.ceil(min);
     max = Math.floor(max);
@@ -25,4 +22,4 @@ for (var i = 0; i<50; i++){
 console.log('save array...');
 console.log(arr);
 
-require('fs').writeFileSync('./data/array.json',JSON.stringify(arr,null,2));
+require('fs').writeFileSync('./test/data/array.json',JSON.stringify(arr,null,2));

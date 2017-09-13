@@ -4,6 +4,6 @@
   "main": "index.js",
   "license": "MIT",
   "scripts": {
-    "start":"node ./src/createarray.js && node ./src/maketree.js && node ./src/count.js"
+    "test":"node ./test/createarray.js && node ./test/maketree.js && node ./test/count.js"
   }
 }
