@@ -1,7 +1,7 @@
 {
   "name": "array2tree",
   "version": "1.0.0",
-  "main": "index.js",
+  "main": "array2tree.js",
   "license": "MIT",
   "scripts": {
     "test":"node ./test/createarray.js && node ./test/maketree.js && node ./test/count.js"
