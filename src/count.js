@@ -16,6 +16,7 @@ function findCount(object){
     }
 }
 
+// count how many items in tree
 findCount(dataArr);
 
 console.log(count);

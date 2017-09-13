@@ -1,3 +1,10 @@
+/**
+ * generate array data
+ */
+
+
+
+
 function getRandomInt(min, max) {
     min = Math.ceil(min);
     max = Math.floor(max);
@@ -13,6 +20,8 @@ for (var i = 0; i<50; i++){
     }
 }
 
+
+// output result array
 console.log('save array...');
 console.log(arr);
 
