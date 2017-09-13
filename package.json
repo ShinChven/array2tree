@@ -1,0 +1,9 @@
+{
+  "name": "array2tree",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "scripts": {
+    "start":"node ./src/createarray.js && node ./src/maketree.js && node ./src/count.js"
+  }
+}

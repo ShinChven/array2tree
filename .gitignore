@@ -1,0 +1,7 @@
+data/
+.vscode/
+.idea
+*.iml
+
+*.log
+yarn.lock
